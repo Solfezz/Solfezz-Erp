@@ -1,0 +1,336 @@
+# ============================================================
+
+# ERP Platform - .gitignore
+
+# Tech Stack:
+
+# C# / .NET / ASP.NET Core
+
+# Entity Framework Core
+
+# PostgreSQL
+
+# Docker
+
+# GitHub Actions
+
+# Visual Studio / Rider / VS Code
+
+# ============================================================
+
+# ------------------------------------------------------------
+
+# .NET build output
+
+# ------------------------------------------------------------
+
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]nyCPU/
+artifacts/
+TestResults/
+[Tt]est[Rr]esults/
+
+# .NET generated files
+
+project.assets.json
+project.nuget.cache
+*.nupkg
+*.snupkg
+
+# NuGet packages
+
+packages/
+*.nuget.props
+*.nuget.targets
+
+# ------------------------------------------------------------
+
+# Visual Studio
+
+# ------------------------------------------------------------
+
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.VC.opendb
+
+# Visual Studio profiling
+
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# ------------------------------------------------------------
+
+# Rider / JetBrains
+
+# ------------------------------------------------------------
+
+.idea/
+*.sln.iml
+
+# JetBrains Rider local files
+
+*.DotSettings.user
+
+# ------------------------------------------------------------
+
+# VS Code
+
+# ------------------------------------------------------------
+
+.vscode/
+
+# Keep shared workspace recommendations/settings in source control
+
+# by using .gitignore exceptions when needed.
+
+# Example:
+
+# !.vscode/extensions.json
+
+# !.vscode/tasks.json
+
+# !.vscode/launch.json
+
+# ------------------------------------------------------------
+
+# Operating system files
+
+# ------------------------------------------------------------
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ------------------------------------------------------------
+
+# Local environment / secrets
+
+# ------------------------------------------------------------
+
+# Environment files
+
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+
+# Allow a safe template
+
+!.env.example
+
+# Local application configuration
+
+appsettings.Local.json
+appsettings.*.Local.json
+
+# Local secret/config folders
+
+secrets/
+.local/
+.local-secrets/
+
+# Azure / local tooling secrets
+
+azureauth/
+*.publishsettings
+
+# Development certificates
+
+*.pfx
+*.p12
+aspnetapp.pfx
+
+# User Secrets generated outside the repository
+
+# (ASP.NET Core User Secrets normally live outside the repo.)
+
+secrets.json
+
+# ------------------------------------------------------------
+
+# Entity Framework / database local artifacts
+
+# ------------------------------------------------------------
+
+# Local SQLite files, if used for development/testing
+
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# EF/database generated artifacts
+
+*.bacpac
+*.dacpac
+
+# ------------------------------------------------------------
+
+# Logs
+
+# ------------------------------------------------------------
+
+logs/
+*.log
+*.log.*
+log/
+
+# ------------------------------------------------------------
+
+# Test / code coverage
+
+# ------------------------------------------------------------
+
+coverage/
+coverage.*
+*.coverage
+*.coveragexml
+*.trx
+TestResults/
+
+# ------------------------------------------------------------
+
+# Code analysis / tooling caches
+
+# ------------------------------------------------------------
+
+.cs-cache/
+_ReSharper*/
+StyleCop.Cache
+*.ncrunch*
+*.ncrunchsolution
+*.ncrunchproject
+*.dotCover
+
+# ------------------------------------------------------------
+
+# Docker
+
+# ------------------------------------------------------------
+
+# Local Docker environment overrides
+
+docker-compose.override.yml
+docker-compose.local.yml
+
+# Docker secrets
+
+docker-secrets/
+.docker/
+
+# ------------------------------------------------------------
+
+# Local development data
+
+# ------------------------------------------------------------
+
+data/
+tmp/
+temp/
+cache/
+
+# ------------------------------------------------------------
+
+# OS / shell history
+
+# ------------------------------------------------------------
+
+*.bak
+*.tmp
+*.swp
+*.swo
+*~
+
+# PowerShell history / local scripts containing machine-specific state
+
+*.ps1.local
+
+# ------------------------------------------------------------
+
+# Generated documentation / tooling output
+
+# ------------------------------------------------------------
+
+docs/_build/
+docs/.cache/
+
+# ------------------------------------------------------------
+
+# Node / frontend
+
+# ------------------------------------------------------------
+
+# Keep these here because a future frontend may use Node tooling.
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.yarn/
+.pnpm-store/
+
+# Frontend build output
+
+dist/
+build/
+.next/
+.nuxt/
+.cache/
+
+# ------------------------------------------------------------
+
+# Playwright
+
+# ------------------------------------------------------------
+
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# ------------------------------------------------------------
+
+# Local machine / IDE metadata
+
+# ------------------------------------------------------------
+
+*.code-workspace
+
+# Uncomment only if local workspace files are intentionally
+
+# excluded from source control:
+
+# *.local.json
+
+# ------------------------------------------------------------
+
+# Keep important templates/examples tracked
+
+# ------------------------------------------------------------
+
+!.env.example
+!**/appsettings.example.json
+!**/appsettings.Template.json
