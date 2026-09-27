@@ -1,4 +1,4 @@
-﻿namespace Erp.Domain.Tests;
+namespace Erp.Domain.Tests;
 
 public class UnitTest1
 {
