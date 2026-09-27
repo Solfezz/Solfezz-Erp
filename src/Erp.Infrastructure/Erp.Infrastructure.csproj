@@ -1,2 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\Erp.Application\Erp.Application.csproj" />
+    <ProjectReference Include="..\Erp.Domain\Erp.Domain.csproj" />
+  </ItemGroup>
 </Project>
