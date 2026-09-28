@@ -1,5 +1,17 @@
+using Erp.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 
+var connectionString =
+    builder.Configuration.GetConnectionString("ErpDatabase");
+
+if (string.IsNullOrWhiteSpace(connectionString))
+{
+    throw new InvalidOperationException(
+        "Connection string 'ErpDatabase' is not configured.");
+}
+
+builder.Services.AddInfrastructure(connectionString);
 // Service registration will be added here as capabilities are introduced.
 
 var app = builder.Build();
