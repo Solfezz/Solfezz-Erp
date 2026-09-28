@@ -16,6 +16,11 @@ builder.Services.AddInfrastructure(connectionString);
 
 var app = builder.Build();
 
+var logger = app.Services.GetRequiredService<ILogger<Program>>();
+
+logger.LogInformation(
+    "Starting Solfezz ERP in {EnvironmentName}",
+    app.Environment.EnvironmentName);
 // HTTP middleware and endpoints will be added here as capabilities are introduced.
 
 app.MapGet("/", () => Results.Ok(new
